@@ -1,17 +1,23 @@
 # operating-systems-projects
 Operating Systems coursework: LSM-tree storage engine &amp; FAT journaling extensions
 
-# Project 1 — LSM-tree Storage Engine (C)
+
+## Project 1 — LSM-tree Storage Engine (C)
 
 ### Description
-Design and implementation of a **log-structured merge-tree (LSM-tree) based storage engine**
-written in C.  
-The project focuses on data organization, multithreaded execution, and efficient write handling.
+This project implements a **log-structured merge-tree (LSM-tree) based storage engine**
+in C, as specified by the course assignment.
 
-### Key Concepts
-- Log-Structured Merge Trees (LSM-tree)
-- Multithreading and concurrency
-- Low-level data management in C
+The implementation focuses on the core mechanisms of LSM-trees, including in-memory
+data buffering, on-disk organization, and background merging, using a multithreaded
+design where required by the assignment.
+
+### What is implemented
+- In-memory structures for buffering writes
+- On-disk data organization following an LSM-tree approach
+- Background merging / compaction logic
+- Multithreaded execution and synchronization
+- Low-level data handling in C
 
 ### Contents
 - `lsm-tree-storage-engine/src/` : source code
@@ -22,15 +28,18 @@ The project focuses on data organization, multithreaded execution, and efficient
 ## Project 2 — FAT File System Extension (Linux)
 
 ### Description
-Source-level modifications related to the **FAT/VFAT file system**.
-The project explores internal file system structures and extends functionality
-towards journaling-like behavior.
+This project involves **source-level analysis and modification of the FAT/VFAT file system**
+as part of an Operating Systems assignment.
 
-### Key Concepts
-- File system internals
-- FAT/VFAT structures
-- Kernel-level file system logic
-- Consistency and journaling concepts
+The work focuses on understanding internal file system structures and implementing
+specific extensions and experiments defined in the assignment, rather than developing
+a complete journaling file system.
+
+### What is implemented
+- Study of FAT/VFAT internal data structures
+- Modifications to selected source files
+- Experiments related to file system consistency
+- Analysis of file system behavior at source-code level
 
 ### Contents
 - `fat-file-system-extension/src/` : modified source files
@@ -41,11 +50,10 @@ towards journaling-like behavior.
 ## Assignment Material
 
 The `assignment/` directory contains the official assignment descriptions
-provided as part of the course, included for reference and context.
+provided as part of the course.
 
 ---
 
 ## Notes
-These projects were developed strictly for academic purposes as part of the
-Operating Systems curriculum.
-Each project can be studied independently.
+These projects were developed strictly for academic purposes and should be
+evaluated in the context of the corresponding coursework specifications.
