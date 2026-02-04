@@ -1,4 +1,4 @@
-# KIWI – Multi-threaded Data Storage Engine
+# Multi-threaded Data Storage Engine
 
 ## Introduction
 This project implements **KIWI**, a multi-threaded data storage engine written in **C**,
